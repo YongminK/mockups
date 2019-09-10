@@ -1,0 +1,111 @@
+.header{
+    margin: 0;
+    padding:0;
+    display:  flex;
+    justify-content: space-between;
+    padding: 15px 140px;;
+}
+.header__logo{
+    background-image: url('../img/logo.png');
+    width: 105.69px;
+    height: 40px;
+}
+.header__menu__nav{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+.header__menu__navlist{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+}
+.header__menu__navlist > li {
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+}
+.header__menu__navlist >li:last-child{
+    margin-right: 0;
+}
+.header__menu__navlist a{
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba(31, 32, 65, 0.5);
+}
+
+.show-more{
+    background-image: url('../img/expand_more.png');
+    width: 24px;
+    height: 21px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    background-position: 50% 50%;
+    width: 24px;
+    height: 13px;
+}
+.header__submenu li{
+    display: block;
+    border-bottom: 2px solid rgba(31, 32, 65, 0.5);
+    padding: 5px;
+}
+.header__menu__navlist .header__submenu{
+    position: absolute;
+    top: 25px;
+    width: 100px;
+    z-index: 10;
+    display: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.show-service:hover .header__submenu{
+    display: block;
+}
+.show-agreement:hover .header__submenu{
+    display: block;
+}
+.header__menu{
+    display: flex;
+}
+.header__menu__buttons{
+    display: flex;
+    align-items: center;
+}
+.header__menu__button-signin{
+    width: 87px;
+    height: 35px;   
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    color: #BC9CFF;
+    background-image: url('../img/SignIn_border.png');
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    margin-right: 20px;
+}
+.header__menu__button-regestration{
+    width: 196px;
+    height: 35px;
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    background-image: url('../img/SignIn_border.png');
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-image: url('../img/Reg_Boreder.png');
+}

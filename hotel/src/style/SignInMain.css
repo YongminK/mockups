@@ -1,0 +1,85 @@
+.signIn{
+    background-image: url('../img/SignIn-background.png');
+    width: 98.5vw;
+    height: 95vh;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.signIn__form{
+    width: 380px;
+    height: 360px;
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding: 40px 30px; 
+    padding-bottom: 30px;   
+}
+.signIn__form__header{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    padding: 0;
+    margin: 0;
+}
+.signIn__form__input{
+    display: block;
+    width: 100%;
+    height: 45px;
+    background-color: #FFFFFF;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding-left: 15px ;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    line-height: 24px;
+}
+input:first-of-type {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+input:last-of-type{
+    margin-bottom: 20px;
+}
+.signIn__form__submit{
+    width: 100%;
+    height: 45px;
+    display: block;
+    background-image: url('../img/form-button-SignIn.png');
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    padding: 0;
+    background-size: 100%;
+    margin-bottom: 30px;
+}
+.signIn__form__newAccount_text{
+    display: inline-block;
+    margin-right: 55px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+}
+.signIn__form__newAccount_button{
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #BC9CFF;
+    background-image: url('../img/SignIn-create-button.png');
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    width: 99px;
+    height: 44px;
+}
