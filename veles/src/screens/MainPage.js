@@ -55,15 +55,20 @@ export default class MainPage extends React.Component {
                     </>
                     : <> </>
                 }
-                <p>Новости культуры</p>
-                <section>
-                    <div>новое</div>
-                    <p>Подводный отель</p>
-                    <p>Как известно, Дубай – город контрастов. Самые революционные и фантастические мечты архитекторов
-                        способен воплотить в жизнь этот мегаполис, построенный на нефти и за счет нефти</p>
-                    <div></div>
+                <p className='header header-big'>Новости культуры</p>
+                <section className='slider-big'>
+                    <div className="darker-background">
+                        <p className='header-orange'>новое</p>
+                        <p className='header-white'>Подводный отель</p>
+                        <p className='text-white'>Как известно, Дубай – город контрастов. Самые революционные и фантастические мечты архитекторов
+                            способен воплотить в жизнь этот мегаполис, построенный на нефти и за счет нефти</p>
+                        <div className='circle-steps'>
+                            <div className="circle circle-white-active"/>
+                            <div className="circle circle-white-inactive"/>
+                        </div>
+                    </div>
                 </section>
-                <section>
+                <section className='news'>
                     <p>Новости</p>
                     <div>
                         <p>Новости культуры России и всего мира</p>

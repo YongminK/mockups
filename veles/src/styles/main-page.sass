@@ -58,4 +58,104 @@
 					position: absolute
 					right: 25px
 
+.header
+	font-family: 'Playfair Display'
+	color: $black
+
+	&-orange
+		background-color: $orange
+		width: 100px
+		height: 30px
+		font-size: 16px
+		line-height: 30px
+		color: $white
+		text-align: center
+		padding: 6px 15px
+		text-transform: uppercase
+		font-family: 'Railway'
+
+	&-white
+		color: $white
+		font-family: 'Railway-Light'
+		text-transform: uppercase
+		letter-spacing: 2px
+		text-align: center
+
+		
+
+.text
+	&-white
+		font-family: 'Railway-Light'
+		text-align: center
+		color: $white
+
+.slider-big
+	background-image: url("../img/hotel.jpg")
+	background-repeat: no-repeat
+	position: relative
+
+	&:after
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		background: rgba(0, 0, 0, .5)
+		z-index: 2
+
+.darker-background
+	position: relative
+	z-index: 3
+	color: #fff
+	text-align: center
+
+
+@media screen and (min-width: 319px)
+	.header
+		&-big
+			font-size: 25px
+			line-height: 33px
+			width: min-content
+			margin: -20px auto 30px auto
+			letter-spacing: 1px
+
+		&-orange
+			margin: 0 auto 30px auto
+
+		&-white
+			font-size: 30px
+			line-height: 1.5
+			width: min-content
+			margin: 0 auto
+	.text
+		&-white
+			font-size: 14px
+			line-height: 21px
+			letter-spacing: 1px
+	.slider-big
+		height: 372px
+		padding: 25px 15px
+		background-size: 334%
+		background-position: 50% 55%
+		margin-bottom: 50px
+		.text-white
+			margin-top: 20px
+	.circle-steps
+		display: flex
+		margin-top: 30px
+		justify-content: center
+		.circle
+			width: 10px
+			height: 10px
+			border-radius: 50%
+			margin-right: 15px
+			&-white-active
+				background-color: $white
+			&-white-inactive
+				background-color: rgba(255, 255, 255, 0.4)
+	.news
+		padding: 0 16px
+
+
 
