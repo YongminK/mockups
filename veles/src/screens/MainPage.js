@@ -1,13 +1,60 @@
 import React from "react";
 
 export default class MainPage extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            width: window.innerWidth
+        };
+        this.handleResize = this.handleResize.bind(this);
+    }
+
+    componentDidMount() {
+        window.addEventListener('resize', this.handleResize);
+    }
+
+    handleResize() {
+        this.setState({
+            width: window.innerWidth
+        })
+    }
 
     render() {
         return (
             <>
-                <div>
-                    <div></div>
-                </div>
+                {this.state.width < 769 ?
+                    <>
+                        {!this.props.showMobileMenu ?
+                            <div className='hamburger-menu'
+                                 onClick={() => this.props.setShowMobileMenu(!this.props.showMobileMenu)}>
+                                <img src={require('../img/Menu.svg')}/>
+                            </div>
+                            :
+                            <div className='hamburger-menu hamburger-menu-close'
+                                 onClick={() => this.props.setShowMobileMenu(!this.props.showMobileMenu)}>
+                                <img src={require('../img/menu-close.svg')}/>
+                            </div>
+                        }
+
+                        {this.props.showMobileMenu ?
+                            <div className='mobile-menu'>
+                                <ul>
+                                    <li><a href="/#">Новости<span/></a></li>
+                                    <li><a href="/#">обзоры<span/></a></li>
+                                    <li><a href="/#">музыка<span/></a></li>
+                                    <li><a href="/#">архитектура<span/></a></li>
+                                    <li><a href="/#">кино<span/></a></li>
+                                    <li><a href="/#">театр<span/></a></li>
+                                    <li><a href="/#">литература<span/></a></li>
+                                    <li><a href="/#">религия<span/></a></li>
+                                    <li><a href="/#">живопись<span/></a></li>
+                                </ul>
+                            </div>
+                            : <></>
+                        }
+                    </>
+                    : <> </>
+                }
                 <p>Новости культуры</p>
                 <section>
                     <div>новое</div>
@@ -64,22 +111,26 @@ export default class MainPage extends React.Component {
                     <div>
                         <img src="" alt=""/>
                         <p>«Шальные годы» Монпарнаса</p>
-                        <p>В Музее изобразительных искусств имени Пушкина с 29 сентября по 29 ноября проходит выставка «Шальные годы Монпарнаса»</p>
+                        <p>В Музее изобразительных искусств имени Пушкина с 29 сентября по 29 ноября проходит выставка
+                            «Шальные годы Монпарнаса»</p>
                     </div>
                     <div>
                         <img src="" alt=""/>
                         <p>«Шальные годы» Монпарнаса</p>
-                        <p>В Музее изобразительных искусств имени Пушкина с 29 сентября по 29 ноября проходит выставка «Шальные годы Монпарнаса»</p>
+                        <p>В Музее изобразительных искусств имени Пушкина с 29 сентября по 29 ноября проходит выставка
+                            «Шальные годы Монпарнаса»</p>
                     </div>
                     <div>
                         <img src="" alt=""/>
                         <p>«Шальные годы» Монпарнаса</p>
-                        <p>В Музее изобразительных искусств имени Пушкина с 29 сентября по 29 ноября проходит выставка «Шальные годы Монпарнаса»</p>
+                        <p>В Музее изобразительных искусств имени Пушкина с 29 сентября по 29 ноября проходит выставка
+                            «Шальные годы Монпарнаса»</p>
                     </div>
                     <div>
                         <img src="" alt=""/>
                         <p>«Шальные годы» Монпарнаса</p>
-                        <p>В Музее изобразительных искусств имени Пушкина с 29 сентября по 29 ноября проходит выставка «Шальные годы Монпарнаса»</p>
+                        <p>В Музее изобразительных искусств имени Пушкина с 29 сентября по 29 ноября проходит выставка
+                            «Шальные годы Монпарнаса»</p>
                     </div>
                     <div></div>
                 </section>
