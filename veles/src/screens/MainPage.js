@@ -60,7 +60,8 @@ export default class MainPage extends React.Component {
                     <div className="darker-background">
                         <p className='header-orange'>новое</p>
                         <p className='header-white'>Подводный отель</p>
-                        <p className='text-white'>Как известно, Дубай – город контрастов. Самые революционные и фантастические мечты архитекторов
+                        <p className='text-white'>Как известно, Дубай – город контрастов. Самые революционные и
+                            фантастические мечты архитекторов
                             способен воплотить в жизнь этот мегаполис, построенный на нефти и за счет нефти</p>
                         <div className='circle-steps'>
                             <div className="circle circle-white-active"/>
@@ -69,75 +70,87 @@ export default class MainPage extends React.Component {
                     </div>
                 </section>
                 <section className='news'>
-                    <p>Новости</p>
-                    <div>
-                        <p>Новости культуры России и всего мира</p>
-                        <p>В минувшие выходные в Москве на фестивале «Оберег» вручили первую премию Russian World Music
-                            Awards</p>
+                    <p className='header-section'>Новости</p>
+                    <div className='news__big'>
+                        <div className="news__big__text">
+                            <p className='header-black'>Новости культуры России и всего мира</p>
+                            <p className='text-black'>В минувшие выходные в Москве на фестивале «Оберег» вручили первую
+                                премию Russian World Music
+                                Awards</p>
+                        </div>
                     </div>
                     <div>
-                        <div>
-                            <img src="" alt=""/>
+                        <div className='news__small'>
+                            <img src={require("../img/news-leonov.png")} alt=""/>
                             <div>
-                                <p>
+                                <p className='header-black'>
                                     Открытие нового памятника Евгению Леонову
                                 </p>
-                                <p>
+                                <p className='text-black'>
                                     10 сентября в 15:00 был открыт памятник писателю
                                 </p>
                             </div>
                         </div>
-                        <div>
-                            <img src="" alt=""/>
+                        <div className='news__small'>
+                            <img src={require('../img/news_talks.png')} alt=""/>
                             <div>
-                                <p>
-                                    Открытие нового памятника Евгению Леонову
+                                <p className='header-black'>
+                                    Беседы с писателями
                                 </p>
-                                <p>
-                                    10 сентября в 15:00 был открыт памятник писателю
+                                <p className='text-black'>
+                                    Русские писатели беседуют о важности искусства
                                 </p>
                             </div>
                         </div>
-                        <div>
-                            <img src="" alt=""/>
+                        <div className='news__small'>
+                            <img src={require('../img/news_Patrick_s_Day.png')} alt=""/>
                             <div>
-                                <p>
-                                    Открытие нового памятника Евгению Леонову
+                                <p className='header-black'>
+                                    День и ночь св. Патрика: встреча старых друзей
                                 </p>
-                                <p>
-                                    10 сентября в 15:00 был открыт памятник писателю
+                                <p className='text-black'>
+                                    Не Джойсом единым живет Ирландия!
                                 </p>
                             </div>
                         </div>
                     </div>
                 </section>
-                <section>
-                    <p>Обзоры</p>
-                    <div>
-                        <img src="" alt=""/>
-                        <p>«Шальные годы» Монпарнаса</p>
-                        <p>В Музее изобразительных искусств имени Пушкина с 29 сентября по 29 ноября проходит выставка
+                <section className='reviews'>
+                    <p className='header-section'>Обзоры</p>
+                    <div className='reviews__block'>
+                        <img src={require('../img/reviews-monparnas.png')} alt=""/>
+                        <p className='header-black'>«Шальные годы» Монпарнаса</p>
+                        <p className='text-black'>В Музее изобразительных искусств имени Пушкина с 29 сентября по 29
+                            ноября проходит выставка
                             «Шальные годы Монпарнаса»</p>
                     </div>
-                    <div>
-                        <img src="" alt=""/>
-                        <p>«Шальные годы» Монпарнаса</p>
-                        <p>В Музее изобразительных искусств имени Пушкина с 29 сентября по 29 ноября проходит выставка
-                            «Шальные годы Монпарнаса»</p>
+                    <div className='reviews__block'>
+                        <img src={require('../img/reviews-anatomy.png')} alt=""/>
+                        <p className='header-black'>Анатомия за 30 секунд</p>
+                        <p className='text-black'>Сейчас, когда мир открыт нараспашку для человека и его познавательных
+                            изысканий, интерес к научно-популярной литературе заметно вырос</p>
                     </div>
-                    <div>
-                        <img src="" alt=""/>
-                        <p>«Шальные годы» Монпарнаса</p>
-                        <p>В Музее изобразительных искусств имени Пушкина с 29 сентября по 29 ноября проходит выставка
-                            «Шальные годы Монпарнаса»</p>
+                    <div className='reviews__block'>
+                        <img src={require('../img/reviews-balet.png')} alt=""/>
+                        <p className='header-black'>Русские балетные сезоны</p>
+                        <p className='text-black'>В Новом Иерусалиме стартовал необычный культурно-развлекательный
+                            спектакль, который покажут в новом театре</p>
                     </div>
-                    <div>
-                        <img src="" alt=""/>
-                        <p>«Шальные годы» Монпарнаса</p>
-                        <p>В Музее изобразительных искусств имени Пушкина с 29 сентября по 29 ноября проходит выставка
-                            «Шальные годы Монпарнаса»</p>
+                    <div className='reviews__block'>
+                        <img src={require('../img/reviews-chudaki.png')} alt=""/>
+                        <p className='header-black'>Сферические чудаки</p>
+                        <p className='text-black'> Корреспондентам «Культурного обозревателя» посчастливилось побывать в
+                            театре «Сфера» на премьере спектакля «Чудаки и зануды» </p>
                     </div>
-                    <div></div>
+                    <div className='pagination'>
+                        <ul>
+                            <li></li>
+                            <li className='page-active'>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li></li>
+                        </ul>
+                    </div>
                 </section>
                 <section>
                     <div>

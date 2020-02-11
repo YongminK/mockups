@@ -40,7 +40,7 @@
 				font-size: 16px
 				line-height: 19px
 				color: $dark-grey
-				font-family: 'Railway'
+				font-family: 'Raleway'
 				text-decoration: none
 				text-transform: uppercase
 				padding: 18px 0 18px 16px
@@ -72,22 +72,35 @@
 		text-align: center
 		padding: 6px 15px
 		text-transform: uppercase
-		font-family: 'Railway'
+		font-family: 'Raleway'
 
 	&-white
 		color: $white
-		font-family: 'Railway-Light'
+		font-family: 'Raleway-Light'
 		text-transform: uppercase
 		letter-spacing: 2px
 		text-align: center
 
-		
+	&-section
+		font-family: 'Raleway-Bold'
+		color: $black
+		text-transform: uppercase
+		letter-spacing: 2px
+
+	&-black
+		font-family: 'Playfair Display'
+		color: $black
+
 
 .text
 	&-white
-		font-family: 'Railway-Light'
+		font-family: 'Raleway-Light'
 		text-align: center
 		color: $white
+
+	&-black
+		font-family: 'Raleway'
+		color: $black
 
 .slider-big
 	background-image: url("../img/hotel.jpg")
@@ -128,34 +141,144 @@
 			line-height: 1.5
 			width: min-content
 			margin: 0 auto
+
+		&-section
+			font-size: 17px
+			line-height: 20px
 	.text
 		&-white
 			font-size: 14px
 			line-height: 21px
 			letter-spacing: 1px
+
 	.slider-big
 		height: 372px
 		padding: 25px 15px
 		background-size: 334%
 		background-position: 50% 55%
 		margin-bottom: 50px
+
 		.text-white
 			margin-top: 20px
 	.circle-steps
 		display: flex
 		margin-top: 30px
 		justify-content: center
+
 		.circle
 			width: 10px
 			height: 10px
 			border-radius: 50%
 			margin-right: 15px
+
 			&-white-active
 				background-color: $white
+
 			&-white-inactive
 				background-color: rgba(255, 255, 255, 0.4)
 	.news
 		padding: 0 16px
+
+		&__big
+			height: 334px
+			padding: 0 15px 0 15px
+			background-image: url("../img/news-obereg.png")
+			background-position: 50% 50%
+			background-repeat: no-repeat
+			position: relative
+			margin-bottom: 25px
+
+			&__text
+				position: absolute
+				bottom: 20px
+
+				.header-black
+					font-size: 20px
+					line-height: 27px
+
+				.text-black
+					font-size: 14px
+					line-height: 1.5
+
+		&__small
+			display: flex
+			height: 90px
+			margin-bottom: 30px
+
+			img
+				margin-right: 15px
+
+			div
+				display: flex
+				flex-direction: column
+				justify-content: center
+
+				p
+					margin: 0
+
+				.header-black
+					font-size: 14px
+					line-height: 19px
+					margin-bottom: 10px
+
+					&:hover
+						color: $orange
+
+				.text-black
+					font-size: 10px
+					line-height: 1.5
+	.reviews
+		padding: 0 16px
+		&__block
+			img
+				margin-bottom: 15px
+			p
+				margin: 0
+			.header-black
+				font-size: 23px
+				line-height: 31px
+				margin-bottom: 10px
+
+				&:hover
+					color: $orange
+
+			.text-black
+				font-size: 14px
+				line-height: 1.5
+				margin-bottom: 30px
+		.pagination
+			ul
+				list-style-type: none
+				padding: 0
+				display: flex
+				justify-content: space-between
+				align-items: center
+				li:first-of-type, li:last-of-type
+					width: 15px
+					height: 15px
+					background-repeat: no-repeat
+					background-position: 50% 50%
+					border: none
+				li:first-of-type
+					background-image: url("../img/arrow-fill-grey-left.svg")
+				li:last-of-type
+					background-image: url("../img/arrow-fill-grey-right.svg")
+
+				li
+					font-size: 18px
+					line-height: 30px
+					padding: 10px
+					width: 29px
+					height: 29px
+					text-align: center
+					color: $dark-grey
+				.page-active
+					border: 1px solid #FF7931
+					color: $orange
+
+
+
+
 
 
 
