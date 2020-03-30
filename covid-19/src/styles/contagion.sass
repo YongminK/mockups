@@ -1,0 +1,40 @@
+@import "./main-style"
+.contagion
+	padding: 0 10%
+	background-image: url("../img/virus.svg")
+	background-repeat: no-repeat
+	background-position: bottom left
+	background-size: 20%
+	margin-bottom: 148px
+	&__content
+		display: flex
+		margin-top: 111px
+		justify-content: space-between
+		&__block
+			max-width: 461px
+			max-height: 575px
+			width: 460px
+			height: 575px
+			background: #FFFFFF
+			box-shadow: 0px 35px 87px rgba(0, 0, 0, 0.11)
+			border-radius: 10px
+			padding: 65px 52px 78px
+			text-align: center
+			border-bottom: 6px solid #FFFFFF
+			img
+				min-width: 269px
+				min-height: 249px
+				margin-bottom: 55px
+			.title-green
+				font-size: 36px
+				line-height: 1.47
+				font-family: 'Gelion-Medium'
+				margin-bottom: 13px
+			.text
+				font-size: 18px
+				line-height: 1.85
+				margin: 0
+			&:hover
+				border-bottom: 6px solid $secondary
+			&:nth-of-type(2)
+				margin: 0 30px
