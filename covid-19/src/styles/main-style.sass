@@ -1,7 +1,13 @@
 $primary: #FB4C47
-$secondary: rgba(250, 86, 82, 0.15)
+$secondary: #FA5652
 $green: #035755
-
+$text: #4B4F51
+@font-face
+	font-family: 'Gelion-Bold'
+	src: url("../fonts/Gelion-Bold.ttf")
+@font-face
+	font-family: 'Gelion-SemiBold'
+	src: url("../fonts/Gelion-SemiBold.ttf")
 @font-face
 	font-family: 'Gelion-Medium'
 	src: url("../fonts/Gelion-Medium.ttf")
@@ -13,3 +19,88 @@ $green: #035755
 @font-face
 	font-family: 'RedHatDisplay-Bold'
 	src: url("../fonts/RedHatDisplay-Bold.ttf")
+
+body, html, #root
+	background: #FFFDFD
+	margin: 0
+	height: 100%
+button
+	border: none
+.title-green
+	color: $green
+	font-family: 'RedHatDisplay-Bold'
+.title-red
+	color: $secondary
+	font-family: 'RedHatDisplay-Bold'
+.text
+	color: $text
+	font-family: 'Gelion-Regular'
+
+.header
+	background-image: url("../img/header-background.svg")
+	background-repeat: no-repeat
+	height: 70%
+	background-position: top right
+	background-size: 70%
+	overflow: hidden
+	padding: 0 10%
+	p
+		width: 50%
+	.title-red
+		font-size: 32px
+		line-height: 122%
+		margin-bottom: 36px
+	.title-green
+		font-size: 40px
+		line-height: 122%
+		margin-bottom: 30px
+	.text
+		font-size: 24px
+		line-height: 190%
+		margin-bottom: 54px
+	button
+		max-width: 250px
+		max-height: 80px
+		box-shadow: 0px 8px 87px rgba(0, 0, 0, 0.1)
+		border-radius: 65px
+		background-color: $primary
+		color: #FFFFFF
+		font-family: 'Gelion-Bold'
+		font-size: 24px
+		line-height: 29px
+		padding: 24px 60px
+		border: none
+.content
+	width: 50%
+.overview
+	background-image: url("../img/overview-background.svg"), url("../img/two-virus.svg")
+	background-position: center left, bottom right
+	padding: 0 10%
+	height: 75vh
+	background-repeat: no-repeat
+	background-size: 50%, 20%
+	display: flex
+	align-items: center
+	justify-content: flex-end
+	.title-red
+		font-size: 29px
+		line-height: 124%
+		margin-bottom: 25px
+	.title-green
+		font-size: 40px
+		margin-bottom: 20px
+	.text
+		font-size: 20px
+		line-height: 215%
+	button
+		max-width: 200px
+		max-height: 65px
+		background: rgba(250, 86, 82, 0.15)
+		border-radius: 65px
+		color: $secondary
+		font-size: 20px
+		line-height: 24px
+		font-family: 'Gelion-SemiBold'
+		padding: 21px 50px
+
+
