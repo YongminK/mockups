@@ -9,10 +9,10 @@ export default function Navigation() {
             </div>
             <nav>
                 <ul>
-                    <li>Overview</li>
-                    <li>Contagion</li>
-                    <li>Symptoms </li>
-                    <li>Prevention</li>
+                    <li><a href="#overview">Overview</a></li>
+                    <li><a href="#contagion">Contagion</a></li>
+                    <li><a href="#symptoms">Symptoms</a> </li>
+                    <li><a href="#prevention">Prevention</a></li>
                 </ul>
                 <button>
                     Contact

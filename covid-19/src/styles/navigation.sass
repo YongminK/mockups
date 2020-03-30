@@ -1,6 +1,10 @@
 @import "main-style"
 
 .navigation
+	display: flex
+	justify-content: space-between
+	align-items: center
+	padding: 0 10%
 	&__logo
 		display: flex
 		align-items: center
@@ -11,3 +15,46 @@
 		span
 			color: $green
 			font-family: 'RedHatDisplay-Bold', sans-serif
+	nav
+		display: flex
+		ul
+			margin: 0
+			padding: 0
+			margin-right: 40px
+			display: flex
+			align-items: center
+			li
+				margin-right: 50px
+				list-style-type: none
+				&:last-of-type
+					margin-right: 0
+				a
+					font-family: 'Gelion-Regular'
+					font-size: 18px
+					line-height: 22px
+					color: $green
+					text-decoration: none
+					position: relative
+					&:hover
+						color: $primary
+					&:hover:after
+						content: ""
+						position: absolute
+						top: 25px
+						background: $primary
+						width: 6px
+						height: 6px
+						border-radius: 100%
+						left: calc(50% - 8px)
+
+		button
+			color: #FF383D
+			background-color: transparent
+			border: 2px solid #FF383D
+			border-radius: 46px
+			padding: 16px 45px
+			max-width: 154px
+			max-height: 55px
+			font-family: 'Gelion-Medium'
+			font-size: 18px
+			line-height: 22px
