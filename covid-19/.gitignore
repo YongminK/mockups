@@ -21,7 +21,3 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-
-#folders
-/src/styles/raleway/
-/src/styles/playfair/
