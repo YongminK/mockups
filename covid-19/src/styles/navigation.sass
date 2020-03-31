@@ -1,10 +1,11 @@
 @import "main-style"
 
 .navigation
-	display: flex
-	justify-content: space-between
-	align-items: center
 	padding: 33px 10%
+	& > div
+		display: flex
+		justify-content: space-between
+		align-items: center
 	&__logo
 		display: flex
 		align-items: center
@@ -58,3 +59,20 @@
 			font-family: 'Gelion-Medium'
 			font-size: 18px
 			line-height: 22px
+
+@media screen and (max-width: 768px)
+	.navigation
+		&__menu
+			width: 30px
+			height: 25px
+
+		nav
+			display: block
+			height: 100%
+			margin-top: 50px
+			ul
+				display: block
+				li
+					padding: 15px 0
+			button
+				margin-top: 20px
