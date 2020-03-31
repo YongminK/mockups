@@ -39,19 +39,29 @@ button
 .block
 	& > p
 		text-align: center
+		margin-bottom: 10px
 	& > .title-red
-		font-size: 29px
 		line-height: 1.24
-		margin-bottom: 25px
-	& > .title-green
-		font-size: 40px
-		margin-bottom: 20px
-	& > .text
 		font-size: 18px
+	& > .title-green
+		font-size: 25px
+	& > .text
 		line-height: 2.15
 		text-transform: capitalize
-		width: 50%
-		margin: 0 auto
+		font-size: 16px
+
+	@media screen and (min-width: 1600px)
+		& > .title-red
+			font-size: 29px
+			margin-bottom: 25px
+		& > .title-green
+			font-size: 40px
+			margin-bottom: 20px
+		& > .text
+			font-size: 18px
+			width: 50%
+			margin: 0 auto
+
 
 .content
 	width: 50%
