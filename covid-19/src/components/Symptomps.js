@@ -1,5 +1,5 @@
 import React from "react";
-
+import '../styles/symptomps.sass';
 export default function Symptomps() {
     return (
         <section className="symptomps block" id='symptomps'>

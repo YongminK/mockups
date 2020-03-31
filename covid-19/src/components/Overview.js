@@ -1,5 +1,5 @@
 import React from "react";
-
+import '../styles/overview.sass'
 export default function Overview() {
     return (
         <section className='overview' id='overview'>

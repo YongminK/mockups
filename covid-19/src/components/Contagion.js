@@ -1,4 +1,5 @@
 import React from "react";
+import '../styles/contagion.sass';
 
 const CONTAGION_CONTENT = [
     {
