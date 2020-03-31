@@ -1,7 +1,6 @@
 @import "main-style"
 
 .navigation
-	padding: 33px 10%
 	& > div
 		display: flex
 		justify-content: space-between
@@ -60,8 +59,13 @@
 			font-size: 18px
 			line-height: 22px
 
-@media screen and (max-width: 768px)
+@media screen and (max-width: 550px)
 	.navigation
+		padding: 20px 5%
+
+@media screen and (max-width: 1099px)
+	.navigation
+		padding: 33px 15%
 		&__menu
 			width: 30px
 			height: 25px

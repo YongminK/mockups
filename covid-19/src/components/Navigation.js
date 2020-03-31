@@ -18,7 +18,7 @@ export default function Navigation() {
                     <img src={require('../img/virus-icon.png')} alt=""/>
                     <span>COVID-19</span>
                 </div>
-                {width >= 768 ?
+                {width >= 1100 ?
                     <nav>
                         <ul>
                             <li><a href="#overview">Overview</a></li>
@@ -39,7 +39,7 @@ export default function Navigation() {
                 }
             </div>
 
-            {isMenuOpen && width < 768 ?
+            {isMenuOpen && width < 1100 ?
                 <nav>
                     <ul>
                         <li><a href="#overview">Overview</a></li>
